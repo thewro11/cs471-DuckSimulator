@@ -1,5 +1,6 @@
 package me.thiti.factories;
 
+import me.thiti.animals.DuckCall;
 import me.thiti.animals.MallardDuck;
 import me.thiti.animals.Quackable;
 import me.thiti.animals.RedheadDuck;
@@ -21,7 +22,7 @@ public class CountAndEchoDuckFactory extends AbstractDuckFactory {
 
     @Override
     public Quackable createDuckCall() {
-        return new QuackCounter(new QuackEcho(new RedheadDuck()));
+        return new QuackCounter(new QuackEcho(new DuckCall()));
     }
 
     @Override
